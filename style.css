@@ -1,0 +1,201 @@
+
+header{background-color:#030f34;
+    width:100% ;
+    font-family: cursive;
+    height:min-content;
+    margin-bottom: 0px;
+    margin-top: auto;
+    }
+    header.h1{font-family:'cursive;'}
+    #profilephoto{width: 60%;height:50%;}
+#info{overflow: hidden;
+    border-right:3px solid black ;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight:900;
+    width: 106ch;
+    margin-left: 200px;
+    animation:typing 4s steps(106),blink 0.75s step-end infinite ;
+    width: fit-content;text-align:justify;}
+     @keyframes typing{from{width: 0;}to{width: 106ch;}}
+header:hover{transition: 1s ease;
+    transform: scaley(1.2);}
+    #nav-links {
+      background-color: #030f34;  
+       padding: 40px 20px;
+       text-align:end;
+       color: azure;
+       font-family: Arial, sans-serif;
+     }
+header,main {margin-top: 0; }
+main{background:  #f4eded;
+    width: 100%s;
+    min-height: 500px;
+    padding: 1em;
+    margin-top: 1;
+    bottom: 100%;
+}
+#about{color: black;
+    text-align: center;
+    font-size: x-large;
+    font-family: cursive;
+    margin-top: 0;
+    border-radius: 20%;
+    margin: 20px;
+    line-height: 1.6;
+    padding: 10px;
+    transform-style: flat;
+}
+#aboutpara{color: rgb(26, 29, 29);font-family:poppins,sans-serif;font-size:large;text-align: center;font-size: 25%;margin-left: 50px;}
+
+
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-card {
+  background:rgb(56, 57, 57);
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 50px;
+  font-size: 18px;
+  font-weight:"bold";
+  box-shadow:  rgba(16, 15, 15, 0.1);
+  transition: transform 0.3s ease, background0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  background:rgb(76, 78, 78);
+}
+.skill-card img {
+  width: 100px;   
+  height: 100px;  
+  object-fit: contain; 
+  margin-bottom: 8px;
+}
+
+
+section {
+  padding: 40px;
+  margin: 20px 0;
+  background-color:rgb(204, 198, 198);
+  border-radius: 10px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #1a1b1b;
+  perspective: 1000px; 
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotatey(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color:rgb(222, 222, 228);
+  color: black;
+}
+.flip-card-back {
+  background-color: rgb(184, 202, 214);
+  color: rgb(23, 24, 24);
+  transform: rotateY(180deg);
+}
+#footer-container{
+  background-color:rgb(42, 39, 39);
+  text-align: center;
+}
+.contact{background-color: #e9a5e4f4;font-family: cursive;
+text-align: center;padding: auto;
+width: 500px;
+height: 500ox;}
+/* Contact Form Styles */
+#contact-me {
+  padding: 40px 0;
+  background-color: #b9b1b1;
+}
+
+.contact-me-card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  border-radius: 14px;
+  background: #928b8bec;
+  box-shadow: 1 12 18px #12121233;
+  font-family: cursive, sans-serif;
+}
+
+.contact-me-card form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #111111;
+  font-size: 1rem;
+}
+
+.contact-me-card form input[type="text"],
+.contact-me-card form input[type="tel"],
+.contact-me-card form input[type="email"],
+.contact-me-card form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1.3px solid #040101;
+  border-radius: 5px;
+  background: #d2e3eae5;
+  font-size: 1rem;
+  resize: horizontal;
+  box-sizing: border-box;
+  transition: border-color 3s;
+}
+
+.contact-me-card form input[type="text"]:focus,
+.contact-me-card form input[type="tel"]:focus,
+.contact-me-card form input[type="email"]:focus,
+.contact-me-card form textarea:focus {
+  border-color: #ad3d3d;
+  outline: none;
+}
+
+.contact-me-card form input[type="submit"] {
+  background: linear-gradient(90deg, #020203 40%, #6ee7b7 100%);
+  color: #b9b1b1;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  padding: 12px 40px;
+  font-size: 1.07rem;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.contact-me-card form input[type="submit"]:hover {
+  background: linear-gradient(90deg, #6ee7b7 0%, #448aff 95%);
+}
+
+@media (max-width: 500px) {
+  .contact-me-card {
+    padding: 18px 8px;
+    font-size: 0.98rem;
+  }
+}
