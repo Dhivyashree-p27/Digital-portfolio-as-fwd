@@ -2,7 +2,8 @@
 header{background-color:#030f34;
     width:100% ;
     font-family: cursive;
-    height:min-content;
+    max-width:1200px
+    height:fit-content;
     margin-bottom: 0px;
     margin-top: auto;
     }
@@ -198,4 +199,5 @@ height: 500ox;}
     padding: 18px 8px;
     font-size: 0.98rem;
   }
+
 }
